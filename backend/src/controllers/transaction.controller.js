@@ -1,5 +1,5 @@
 import validateTransaction from "../validators/transaction.validator";
-import { calculateRisk } from "../services/fraud.service";
+import calculateRisk from "../services/fraud.service";
 function scoreTransaction(req, res) {
   const errors = validateTransaction(req.body);
 
