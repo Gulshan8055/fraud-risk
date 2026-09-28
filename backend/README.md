@@ -31,3 +31,19 @@ shieldwer-fraud-risk-api/
 ├── package.json
 └── README.md
 
+POST /score-transaction
+
+{
+  "amount": 15000,
+  "country": "IN",
+  "device_new": true,
+  "transactions_last_hour": 4
+}
+response ------
+{
+  "risk_level": "high",
+  "flags": [
+    "amount_gt_10000_and_new_device",
+    "more_than_3_transactions_last_hour"
+  ]
+}

@@ -1,6 +1,8 @@
 import express from "express";
-import transactionRoutes from "./router/transaction.router";
+import transactionRoutes from "./router/transaction.router.js";
 const app = express();
+import dotenv from "dotenv";
+dotenv.config();
 
 app.use(express.json());
 

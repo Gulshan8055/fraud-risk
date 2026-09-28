@@ -1,5 +1,5 @@
-const request = require("supertest");
-const app = require("../src/app");
+import supertest from "supertest";
+import app from "../src/app.js";
 
 describe("POST /score-transaction", () => {
   test("should return low risk when no rules are triggered", async () => {
